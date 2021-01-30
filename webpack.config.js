@@ -32,5 +32,8 @@ module.exports = {
         inline: true,
         open: true,
         port: 4000,
+        historyApiFallback: {
+            index: 'index.html',
+        },
     },
 };
