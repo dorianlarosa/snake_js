@@ -18,6 +18,23 @@ module.exports = {
         }, {
             test: /\.s[ac]ss$/i,
             use: ["style-loader", "css-loader", "sass-loader", 'import-glob-loader']
+        }, {
+            test: /\.(png|jpe?g|gif)$/i,
+            use: [{
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'assets/images/'
+                }
+            }, ],
+        }, {
+            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            use: [{
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'assets/fonts/'
+                }
+            }]
         }],
     },
     plugins: [

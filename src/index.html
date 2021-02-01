@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,28 @@
     <title>Snake</title>
     <title>Document</title>
 </head>
+
 <body>
-    <canvas width="800px" height="800px"></canvas>
+    <canvas width="400px" height="400px">
+
+    </canvas>
+    <div class="container-popup container-popup__game-over hide">
+        <div id="popup">
+            <p class="title">Game over</p>
+            <p class="title">Votre score est de :</p>
+            <p id="score"></p>
+            <button class="btn" id="btn-replay-game">Rejouer</button>
+        </div>
+    </div>
+
+    <div class="container-popup container-popup__start">
+        <div id="popup">
+            <p class="title">Snake</p>
+            <p class="text">Utilisez les fleche directionnel pour controler le serpent et manger le plus de pomme possible</p>
+            <button class="btn" id="btn-play-game">Jouer</button>
+        </div>
+    </div>
+
 </body>
-</html>  
+
+</html>
